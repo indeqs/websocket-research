@@ -9,3 +9,7 @@ This is a simple app that uses websockets to test out this idea
 2. `node server.js`
 
 server runs on `localhost:3000`
+
+## npm packages used
+- [ws](https://www.npmjs.com/package/ws) -> for web sockets
+- [body-parser](https://www.npmjs.com/package/body-parser) -> to parse incoming request bodies in a middleware before handlers, making the data available under `req.body` for easier processing.
