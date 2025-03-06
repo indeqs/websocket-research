@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <header>
+      <h1>Real-Time Chat</h1>
+    </header>
+
+    <div class="user-setup" id="userSetup">
+      <h2>Enter your username</h2>
+      <div class="input-group">
+        <input type="text" id="usernameInput" placeholder="Username">
+        <button id="setUsernameBtn">Join Chat</button>
+      </div>
+    </div>
+
+    <div class="chat-box" id="chatBox" style="display: none;">
+      <div class="messages" id="messages"></div>
+
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendBtn">Send</button>
+      </div>
+
+      <div class="api-controls">
+        <h3>API Controls</h3>
+        <div class="buttons">
+          <button id="getMessagesBtn">GET Messages</button>
+          <button id="postMessageBtn">POST Message</button>
+          <div class="input-group">
+            <input type="number" id="messageIdInput" placeholder="Message ID">
+            <button id="getSingleMessageBtn">GET Message</button>
+            <button id="deleteMessageBtn">DELETE Message</button>
+          </div>
+        </div>
+        <div id="apiResponse"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
