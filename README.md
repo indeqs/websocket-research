@@ -13,3 +13,9 @@ server runs on `localhost:3000`
 ## npm packages used
 - [ws](https://www.npmjs.com/package/ws) -> for web sockets
 - [body-parser](https://www.npmjs.com/package/body-parser) -> to parse incoming request bodies in a middleware before handlers, making the data available under `req.body` for easier processing.
+
+---
+
+## Other similar work and random notes
+- [Issues with WebSocket reverse proxying allowing to smuggle HTTP requests from 0ang3el](https://github.com/0ang3el/websocket-smuggle)
+- [From hacktricks](https://book.hacktricks.wiki/en/pentesting-web/h2c-smuggling.html)
